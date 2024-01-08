@@ -1,0 +1,22 @@
+.header-components {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 50px;
+  align-items: center;
+}
+
+.header-search {
+  display: flex;
+}
+
+.header-rigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #8b96a5;
+}
+
+.header-rigth p {
+  font-size: 14px;
+}

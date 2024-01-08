@@ -1,0 +1,13 @@
+.item-components {
+  width: 160px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 12px 0px;
+}
+
+.item-components img {
+  height: 160px;
+}
+
+.item-components p {
+  color: #8b96a5;
+}

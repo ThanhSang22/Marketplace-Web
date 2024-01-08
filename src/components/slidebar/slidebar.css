@@ -1,0 +1,39 @@
+.Sidebar {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  padding: 20px;
+  margin: 30px 70px;
+}
+.sidebar-info {
+  padding: 20px;
+  width: 200px;
+  height: fit-content;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+.list-group {
+  list-style: none;
+  gap: 20px;
+  width: 250px;
+}
+.acc {
+  font-size: 20px;
+}
+.info {
+  width: 200px;
+  padding: 20px;
+  height: fit-content;
+  background-color: #f38332;
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-top: 15px;
+  border-radius: 10px;
+  text-align: center;
+  /* justify-content: center; */
+  font-size: 15px;
+  color: white;
+}
