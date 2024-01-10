@@ -7,7 +7,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="header-components d-flex border-bottom">
+    <div className="header-components d-flex border-bottom bg-white">
       <img src={logo} />
       <div className="header-search input-group w-50">
         <input

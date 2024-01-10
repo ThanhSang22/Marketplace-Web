@@ -3,7 +3,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="ps-5 pe-5 border-bottom d-flex justify-content-between">
+    <div className="ps-5 pe-5 border-bottom d-flex justify-content-between bg-white">
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link text-black" aria-current="page" href="#">

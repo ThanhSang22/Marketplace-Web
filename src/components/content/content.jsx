@@ -10,6 +10,20 @@ import camera from "../../assets/images/camara.jpg";
 import earphone from "../../assets/images/earphone.jpg";
 import phone from "../../assets/images/phone.jpg";
 import Item from "../item/item";
+import img1 from "../../assets/images/image1.png";
+import img2 from "../../assets/images/image2.png";
+import img3 from "../../assets/images/image3.png";
+import img4 from "../../assets/images/image4.png";
+import icon1 from "../../assets/images/icon1.png";
+import icon2 from "../../assets/images/icon2.png";
+import icon from "../../assets/images/icon.png";
+import AU from "../../assets/images/AU@2x.png";
+import CN from "../../assets/images/CN@2x.png";
+import DK from "../../assets/images/DK@2x.png";
+import IT from "../../assets/images/IT@2x.png";
+import RU from "../../assets/images/RU@2x.png";
+import US from "../../assets/images/us.png";
+// import { IoMdSearch } from "react-icons/io";
 
 const TO = new Date().getTime() + 24 * 3600 * 1000 + 5000;
 console.log("TO VALUE", TO);
@@ -17,7 +31,7 @@ console.log("TO VALUE", TO);
 const Content = () => {
   return (
     <div style={{ marginLeft: 70, marginRight: 70 }}>
-      <div className=" d-flex border border-1 rounded ">
+      <div className=" d-flex border border-1 rounded bg-white">
         <div
           style={{ borderRadius: 2, width: "25%" }}
           className="p-3 border-end"
@@ -61,7 +75,7 @@ const Content = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex border border-1 rounded mt-5 justify-content-between">
+      <div className="d-flex border border-1 rounded mt-5 justify-content-between bg-white">
         <div className="section-sale">
           <h6>Consumer electronics and gadgets</h6>
           <button type="button" class="btn btn-light">
@@ -187,7 +201,7 @@ const Content = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex border border-1 rounded mt-5 justify-content-between">
+      <div className="d-flex border border-1 rounded mt-5 justify-content-between bg-white">
         <div className="section-sale1">
           <h6>Consumer electronics and gadgets</h6>
           <button type="button" class="btn btn-light">
@@ -313,7 +327,7 @@ const Content = () => {
           </div>
         </div>
       </div>
-      <div className=" content-bgr rounded">
+      <div className=" content-bgr rounded bg-white">
         <div className="bg-opacity-50 rounded d-flex justify-content-around d-flex background">
           <div className="text-white w-25 text-start">
             <h3>An easy way to send requests to all suppliers</h3>
@@ -322,7 +336,7 @@ const Content = () => {
               eiusmod tempor incididunt.
             </p>
           </div>
-          <div class="bg-light p-5 d-flex row justify-content-start rounded">
+          <div class="bg-light p-5 d-flex row justify-content-start rounded w-50">
             <form className="form rounded">
               <p>Send quote to suppliers</p>
               <div className="d-flex row mt-4">
@@ -333,12 +347,9 @@ const Content = () => {
                   style={{ height: 50 }}
                 />
               </div>
-              <div class="mb-3 d-flex mt-2 gap-3 ">
+              <div class="mb-3 d-flex mt-2 gap-3 w-75">
                 <input type="text" className="rounded border border-1" />
-                <select
-                  id="disabledSelect"
-                  class="form-select rounded border border-1"
-                ></select>
+                <select class="form-select rounded border border-1"></select>
               </div>
               <button
                 type="button"
@@ -356,6 +367,121 @@ const Content = () => {
         <div className=" d-flex flex-wrap justify-content-between">
           <Item />
           <Item />
+        </div>
+      </div>
+      <h4 className="pt-5 text-start">Our extra services</h4>
+      <div className="content-serviece d-flex justify-content-between mt-3">
+        <div class="card" style={{ width: `18rem` }}>
+          <img src={img1} class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text text-start">
+              Source from <br />
+              Industry Hubs
+            </p>
+          </div>
+        </div>
+        <div class="card" style={{ width: `18rem` }}>
+          <img src={img2} class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text text-start">
+              Customize <br />
+              Your Products
+            </p>
+          </div>
+        </div>
+        <div class="card" style={{ width: `18rem` }}>
+          <img src={img3} class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text w-75 text-start">
+              Fast, reliable shipping by ocean or air
+            </p>
+          </div>
+        </div>
+        <div class="card" style={{ width: `18rem` }}>
+          <img src={img4} class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text text-start w-75">
+              Product monitoring and inspection
+            </p>
+          </div>
+        </div>
+      </div>
+      <h4 className="pt-5 text-start">Suppliers by region</h4>
+
+      <div class="container text-center">
+        <div class="row row-cols-5 mt-4">
+          <div class="col d-flex gap-3 text-start" style={{ height: 20 }}>
+            <img src={icon2} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
+          <div class="col d-flex gap-3 text-start">
+            <img src={US} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
+          <div class="col d-flex gap-3 text-start">
+            <img src={CN} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
+          <div class="col d-flex gap-3 text-start">
+            <img src={RU} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
+          <div class="col d-flex gap-3 text-start">
+            <img src={CN} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-5 mt-4">
+          <div class="col d-flex gap-3 text-start" style={{ height: 20 }}>
+            <img src={icon} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
+          <div class="col d-flex gap-3 text-start">
+            <img src={DK} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
+          <div class="col d-flex gap-3 text-start">
+            <img src={icon1} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
+          <div class="col d-flex gap-3 text-start">
+            <img src={RU} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
+          <div class="col d-flex gap-3 text-start">
+            <img src={IT} style={{ height: 20 }} />
+            <div>
+              <div>Arabic Emirates</div>
+              <div className="text-body-tertiary">shopname.ae</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

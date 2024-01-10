@@ -1,12 +1,12 @@
 import React from "react";
 import "./slidebar.css";
-import Banner from "../../assets/images/Banner.png";
+// import Banner from "../../assets/images/Banner.png";
 import { MdOutlineAccountCircle } from "react-icons/md";
 
 export default function Slidebar() {
   return (
-    <div className="Sidebar d-flex justify-content-between border border-1 rounded">
-      <ul class="list-group p-2">
+    <div className="Sidebar d-flex justify-content-between border border-1 rounded bg-white">
+      <ul class="list-group p-2 text-start">
         <li>Automobiles</li>
         <li>Clothes and wear</li>
         <li>Home interiors</li>
@@ -17,11 +17,19 @@ export default function Slidebar() {
         <li>Machinery tools</li>
         <li>More category</li>
       </ul>
-      <img src={Banner} alt="" />
+      {/* <img src={Banner} alt="" /> */}
+      <div className="sildebar-banner">
+        <div>
+          Latest trending <b>Electronic items</b>
+        </div>
+        <button type="button" class="text-bg-light rounded-4 btn">
+          Learn more
+        </button>
+      </div>
       <div className="">
         <div className="sidebar-info">
-          <p className="acc">
-            <MdOutlineAccountCircle />
+          <p className="acc text-start">
+            <MdOutlineAccountCircle className="me-2" />
             Hi, user <br /> let's get stated
           </p>
           <button type="button" class="btn btn-primary">

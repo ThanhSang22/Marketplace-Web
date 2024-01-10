@@ -1,17 +1,14 @@
 import "./App.css";
-import Content from "./components/content/content";
-import Header from "./components/header/header";
-import Navbar from "./components/navbar/navbar";
-import Slidebar from "./components/slidebar/slidebar";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage/HomePage";
+import ListView from "./Pages/ListView/ListView";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Navbar />
-      <Slidebar />
-      <Content />
-    </div>
+    <Routes className="App bg-body-tertiary">
+      <Route path="/" element={<HomePage />} />
+      <Route path="/list-view" element={<ListView />} />
+    </Routes>
   );
 }
 
